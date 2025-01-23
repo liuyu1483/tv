@@ -25,7 +25,7 @@ jobs:
             - run: yarn install
             - run: yarn build
             - run: yarn m3u
--           - run: yarn matrix
+           - run: yarn matrix
 
             - name: "Jekyll theme"
               run: mv ./_config.temp.yml ./m3u/_config.yml
