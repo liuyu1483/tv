@@ -19,6 +19,8 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "npm"
+            - name: Initialize project
+              run: npm init -y
             - name: install yarn
               run: npm install yarn -g
             - run: yarn install
